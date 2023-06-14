@@ -10,9 +10,11 @@ public class Sample : MonoBehaviour
 #if UNITY_IOS
         BuglyAgent.InitWithAppId ("your ios app id");
 #elif UNITY_ANDROID
-        BuglyAgent.InitWithAppId ("812665466a");
+        BuglyAgent.InitWithAppId ("03ad2ac811");
+#else
+        BuglyAgent.InitWithAppId ("03ad2ac811");
 #endif
-
+        
         BuglyAgent.ConfigDebugMode(true);
         BuglyAgent.EnableExceptionHandler();
         Debug.LogError($"init bugly");
